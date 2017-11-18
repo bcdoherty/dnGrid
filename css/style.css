@@ -1,0 +1,25 @@
+body {
+  background-color: #dadada;
+}
+
+.full-width {
+  width: 100%
+
+}
+
+.grid-contain {
+  display: grid;
+  font-size: 30px;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px repeat(3, 200px);
+  width: 420px;
+}
+
+nav {
+  background-color: rgba(0,0,0,.6);
+}
+
+footer {
+  background-color: #aaa;
+}
