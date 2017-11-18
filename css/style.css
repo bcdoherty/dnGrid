@@ -1,10 +1,15 @@
 body {
   background-color: #dadada;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 .full-width {
-  width: 100%
-
+  width: 100%;
+  height: 325px;
 }
 
 .grid-contain {
@@ -12,14 +17,47 @@ body {
   font-size: 30px;
   margin: 0 auto;
   grid-template-columns: 1fr;
-  grid-template-rows: 80px repeat(3, 200px);
+  grid-template-rows: 80px repeat(10, 100px);
   width: 420px;
 }
 
 nav {
   background-color: rgba(0,0,0,.6);
+  color: #fff;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  z-index: 1;
+}
+
+nav h1{
+  font-family: 'Playfair Display', serif;
+  margin-top: 15px;
+  text-align: center;
 }
 
 footer {
   background-color: #aaa;
+  grid-column: 1 / 2;
+  grid-row: 9 / 10;
+}
+
+section {
+  grid-column: 1 / 2;
+  grid-row: 1 / 7;
+}
+
+section h1 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 50px;
+  margin: 10px 0 20px 0;
+}
+
+aside {
+  grid-column: 1 / 2;
+  grid-row: 7 / 10;
+}
+
+aside div {
+  margin-bottom: 10px;
 }
